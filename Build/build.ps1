@@ -8,7 +8,7 @@ param (
 )
 
 # build the solution
-$SolutionPath = "..\Rackspace.Threading.sln"
+$SolutionPath = "..\Rackspace.Threading-net35.sln"
 
 # make sure the script was run from the expected path
 if (!(Test-Path $SolutionPath)) {
@@ -119,7 +119,7 @@ if (-not (Test-Path 'nuget')) {
 
 # The NuGet packages reference XML documentation which is post-processed by SHFB. If the -NoDocs flag is specified,
 # these files are not created so packaging will fail.
-If (-not $NoDocs) {
+#If (-not $NoDocs) {
 	&$nuget 'pack' '..\Rackspace.Threading\TunnelVisionLabs.Threading.nuspec' '-OutputDirectory' 'nuget' '-Prop' "Configuration=$BuildConfig" '-Version' "$Version" '-Symbols'
 	Exit $LASTEXITCODE
-}
+#}

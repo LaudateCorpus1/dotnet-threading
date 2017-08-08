@@ -13,3 +13,6 @@ TestResults/
 
 # Roslyn IntelliSense Cache
 *.vs/
+.shfb
+UpgradeLog*
+*.orig

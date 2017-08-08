@@ -15,14 +15,7 @@
     <tags>threading tasks tpl async await</tags>
     <dependencies>
       <group targetFramework="3.5">
-        <dependency id="TaskParallelLibrary" version="1.0.2856.0" />
-      </group>
-      <group targetFramework="4.0">
-        <dependency id="Microsoft.Bcl.Build" version="1.0.14" />
-        <dependency id="Microsoft.Bcl" version="1.1.9" />
-      </group>
-      <group targetFramework="4.5">
-        <!-- Only the .NET Framework 3.5 and 4.0 needs a dependency. All newer frameworks use this empty group. -->
+        <dependency id="TaskParallelLibrary" version="1.0.3333.0" />
       </group>
     </dependencies>
   </metadata>
@@ -31,27 +24,6 @@
     <!-- Runtime libraries -->
     <file src="bin\net35-client\$Configuration$\Rackspace.Threading.dll" target="lib\net35-client"/>
     <file src="bin\net35-client\$Configuration$\Rackspace.Threading.pdb" target="lib\net35-client"/>
-    <file src="..\Docs.Threading\bin\Api\net35-client\$Configuration$\Rackspace.Threading.xml" target="lib\net35-client"/>
-
-    <file src="bin\net40-client\$Configuration$\Rackspace.Threading.dll" target="lib\net40-client"/>
-    <file src="bin\net40-client\$Configuration$\Rackspace.Threading.pdb" target="lib\net40-client"/>
-    <file src="..\Docs.Threading\bin\Api\net40-client\$Configuration$\Rackspace.Threading.xml" target="lib\net40-client"/>
-
-    <file src="bin\net45\$Configuration$\Rackspace.Threading.dll" target="lib\net45"/>
-    <file src="bin\net45\$Configuration$\Rackspace.Threading.pdb" target="lib\net45"/>
-    <file src="..\Docs.Threading\bin\Api\net45\$Configuration$\Rackspace.Threading.xml" target="lib\net45"/>
-
-    <file src="bin\netcore45\$Configuration$\Rackspace.Threading.dll" target="lib\netcore45"/>
-    <file src="bin\netcore45\$Configuration$\Rackspace.Threading.pdb" target="lib\netcore45"/>
-    <file src="..\Docs.Threading\bin\Api\netcore45\$Configuration$\Rackspace.Threading.xml" target="lib\netcore45"/>
-
-    <file src="bin\portable-net40\$Configuration$\Rackspace.Threading.dll" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
-    <file src="bin\portable-net40\$Configuration$\Rackspace.Threading.pdb" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
-    <file src="..\Docs.Threading\bin\Api\portable-net40\$Configuration$\Rackspace.Threading.xml" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
-
-    <file src="bin\portable-net45\$Configuration$\Rackspace.Threading.dll" target="lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
-    <file src="bin\portable-net45\$Configuration$\Rackspace.Threading.pdb" target="lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
-    <file src="..\Docs.Threading\bin\Api\portable-net45\$Configuration$\Rackspace.Threading.xml" target="lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
 
     <!-- Source code -->
     <file src="**\*.cs" target="src" />
